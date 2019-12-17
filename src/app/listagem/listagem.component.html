@@ -1,0 +1,20 @@
+<h3>Listagem!</h3>
+<table border=1>
+<tr *ngFor="let item of Users">
+<td>{{item.name}}</td>
+<td>{{item.email}}</td>
+<td>{{item.address.street}}</td>
+<td>{{item.address.suite}}</td>
+<td>{{item.address.city}}</td>
+<td>{{item.address.zipcode}}</td>
+
+<td>{{item.address.geo.lat}}</td>
+<td>{{item.address.geo.lng}}</td>
+<td>{{item.phone}}</td>
+<td>{{item.website}}</td>
+<td>{{item.company.name}}</td>
+<td>{{item.catchPhrase}}</td>
+<td>{{item.bs}}</td>
+</tr>
+</table>
+
